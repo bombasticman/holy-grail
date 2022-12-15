@@ -1,0 +1,38 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#sidebar {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 0.1fr 0.50fr 1fr;
+    gap: 5rem;
+}
+
+#sidebar div:nth-child(1) {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+}
+
+#sidebar div:nth-child(2) {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+}
+
+#sidebar div:nth-child(3) {
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+}
+
+#header {
+    grid-column: 2/3;
+}
+
+#content {
+    grid-column: 2/3;
+}
